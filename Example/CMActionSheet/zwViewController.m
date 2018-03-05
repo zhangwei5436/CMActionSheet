@@ -7,8 +7,9 @@
 //
 
 #import "zwViewController.h"
+#import "CMActionSheet.h"
 
-@interface zwViewController ()
+@interface zwViewController ()<CMActionSheetDelegate>
 
 @end
 
@@ -17,13 +18,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    UIButton * butt = [UIButton buttonWithType:UIButtonTypeCustom];
+    butt.frame = CGRectMake(30, 80, 50, 50);
+    [butt addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+    butt.backgroundColor =[UIColor redColor];
+    [self.view addSubview:butt];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)click{
+    
+    CMActionSheet *sheet = [[CMActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"取消"  otherButtonTitles:@"拍照",@"从相册中选择", nil];
+    [sheet setCancelButtonTitleColor:[UIColor blackColor] bgColor:nil fontSize:14];
+    [sheet setButtonTitleColor:[UIColor blackColor] bgColor:nil fontSize:14 atIndex:0];
+    [sheet setButtonTitleColor:[UIColor blackColor] bgColor:nil fontSize:14 atIndex:1];
+    [sheet show];
+}
+
+#pragma mark CMActionSheetDelegate
+- (void)actionSheet:(CMActionSheet *)sheet clickedButtonIndex:(NSInteger)buttonIndex
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if(buttonIndex == 0){
+        //打开相机
+        
+    }else if (buttonIndex == 1){
+        //打开相册
+        
+    }
 }
 
 @end

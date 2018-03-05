@@ -1,0 +1,6 @@
+framework module CMActionSheet {
+  umbrella header "CMActionSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}
