@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		4704E92307FE2EFEA304B6A8 /* Pods-CMActionSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMActionSheet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMActionSheet_Tests/Pods-CMActionSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4BDBB65F16B69F35F04BDB68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		502439AAC5CD4B5CFA9C1BE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		4BDBB65F16B69F35F04BDB68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		502439AAC5CD4B5CFA9C1BE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* CMActionSheet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMActionSheet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,7 +60,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7C7BE9A8AF1F6344F6933797 /* CMActionSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CMActionSheet.podspec; path = ../CMActionSheet.podspec; sourceTree = "<group>"; };
+		7C7BE9A8AF1F6344F6933797 /* CMActionSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CMActionSheet.podspec; path = ../CMActionSheet.podspec; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FA75A93216A1EF0B59D222B /* Pods-CMActionSheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CMActionSheet_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CMActionSheet_Example/Pods-CMActionSheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B0F6EE94AF2F74FB11DDB4B8 /* Pods_CMActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CMActionSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -545,9 +545,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMActionSheet/CMActionSheet-Prefix.pch";
 				INFOPLIST_FILE = "CMActionSheet/CMActionSheet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -560,9 +562,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CMActionSheet/CMActionSheet-Prefix.pch";
 				INFOPLIST_FILE = "CMActionSheet/CMActionSheet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
